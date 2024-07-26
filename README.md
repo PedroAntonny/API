@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img src=".github/logo-rocketnotes.svg" title="Rocketnotes" alt="" width="30px" />
+    <img src=".github/logo-rocketnotes.svg" title="RocketNotes" alt="" width="30px" />
     RocketNotes API
 </h1>
 
@@ -11,7 +11,6 @@
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/pabloxt14/Rocketnotes-API">
 
    <img alt="License" src="https://img.shields.io/github/license/pabloxt14/Rocketnotes-API">
-
 </p>
 
 <h4 align="center"> 
@@ -19,25 +18,21 @@
 </h4>
 
 <p align="center">
- <a href="#-about">About</a> |
-<a href="#-how-it-works">How It Works</a> |
-<a href="#-technologies">Technologies</a> |
-<a href="#-author">Author</a> |
-<a href="#-license">License</a>
-
+ <a href="#-about">About</a> | 
+ <a href="#-technologies">Technologies</a> | 
+ <a href="#-author">Author</a> | 
+ <a href="#-license">License</a>
 </p>
 
 ## 💻 About
 
-Este é o repositório do back-end da aplicação RocketNotes, sendo está uma aplicação web na qual os usuários podem se cadastrar e criar de forma organizada anotações sobre determinados assuntos, tendo disponível a adição de titulo, descrição, links e tags para cada nota, além de contar a edição de perfil do usuário, podendo alterar seu avatar, nome, email e senha, entre outras funcionalidades.
+Este é o repositório do back-end da aplicação RocketNotes, sendo está uma aplicação web na qual os usuários podem se cadastrar e criar de forma organizada anotações sobre determinados assuntos, tendo disponível a adição de titulo, descrição, links e tags para cada nota, além de conter a edição de perfil do usuário, podendo alterar seu avatar, nome, email e senha, entre outras funcionalidades.
 
 Vale ressaltar que este projeto faz parte da trilha/curso **Explorer** oferecida pela [Rocketseat](https://www.rocketseat.com.br/) para quem tiver interesse.
 
 ---
 
-## 🚀 How it works
-
-### Pré-requisitos
+### 🚀 Pre-requisites
 
 Antes de baixar o projeto você vai precisar ter instalado na sua máquina as seguintes ferramentas:
 
@@ -56,14 +51,22 @@ $ git clone gh repo clone PedroAntonny/RocketNotes-Api
 # Acesse a pasta do projeto no terminal/cmd
 $ cd RocketNotes-API
 
+# Configure as variáveis de ambiente em um arquivo .env na raiz do projeto (use o arquivo .env.example como base)
+
 # Instale as dependências
 $ npm install
+
+# Execute as migrations
+$ npm run migrate:dev
 
 # Execute a aplicação em modo de desenvolvimento
 $ npm run dev
 
 # O servidor inciará na porta:3333 - acesse http://localhost:3333
 
+# Executar testes (caso queira)
+$ npm test
+```
 
 ### Rotas
 
@@ -95,7 +98,6 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - **[Nodemon](https://www.npmjs.com/package/nodemon)**
 - **[Express-Async-Errors](https://www.npmjs.com/package/express-async-errors)**
 - **[Knex](https://knexjs.org/)**
-- **[PostgreSQL](https://node-postgres.com/)**
 - **[SQLite](https://github.com/mapbox/node-sqlite3)**
 - **[CORS](https://www.npmjs.com/package/cors)**
 - **[Dotenv](https://www.npmjs.com/package/dotenv)**
@@ -118,5 +120,3 @@ Feito com 💜 por Pedro Antonny. 👋🏽
 ## 📝 License
 
 Este projeto está sob a licença MIT. Consulte o arquivo [LICENSE](./LICENSE) para mais informações
-
-```
